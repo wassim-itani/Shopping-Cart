@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Tomatoes",
+    "price": 2.5,
+    "image": "/images/tomatoes.avif"
+  },
+  {
+    "name": "Grapes White",
+    "price": 2.45,
+    "image": "/images/grapes.webp"
+  },
+  {
+    "name": "Strawberries",
+    "price": 1.45,
+    "image": "/images/strawberries.avif"
+  },
+  {
+    "name": "Tangerines",
+    "price": 2.75,
+    "image": "/images/tangerines.avif"
+  },
+  {
+    "name": "Bananas",
+    "price": 1.5,
+    "image": "/images/bananas.avif"
+  },
+  {
+    "name": "Lemons",
+    "price": 2.4,
+    "image": "/images/lemons.avif"
+  },
+  {
+    "name": "Apples",
+    "price": 2.95,
+    "image": "/images/apples.avif"
+  },
+  {
+    "name": "Potatoes",
+    "price": 1.95,
+    "image": "/images/potatoes.avif"
+  },
+  {
+    "name": "Fresh Spinach",
+    "price": 4.5,
+    "image": "/images/spinach.avif"
+  },
+  {
+    "name": "Pears",
+    "price": 3.35,
+    "image": "/images/pears.avif"
+  },
+  {
+    "name": "Broccoli",
+    "price": 3.55,
+    "image": "/images/broccoli.avif"
+  },
+  {
+    "name": "Plums",
+    "price": 3.2,
+    "image": "/images/plums.avif"
+  }
+]
