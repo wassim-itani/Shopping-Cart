@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 
 export interface ItemType {
   name: string;
-  category: string;
   price: number;
   image: string;
 }
