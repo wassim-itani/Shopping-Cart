@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="max-w-5xl mx-auto p-6">
+      <main className="max-w-5xl mx-auto px-4 min-[426px]:px-5">
         <MarketList />
       </main>
     </>

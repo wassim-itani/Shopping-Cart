@@ -14,7 +14,7 @@ const Dropdown = () => {
   };
 
   return (
-    <div className="absolute top-10 right-5 z-10 w-80 bg-white rounded shadow-md animate-fadeIn">
+    <div className="absolute top-10 right-3 z-10 w-80 bg-white border rounded shadow-md animate-fadeIn">
       <div className="h-52 overflow-auto">
         {cartItems.length > 0 ? (
           <ul>
