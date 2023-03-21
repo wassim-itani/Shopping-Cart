@@ -5,10 +5,10 @@ import { CartItemType, removeItem } from "../../store/features/cartSlice";
 const CartItem = (item: CartItemType) => {
   const dispatch = useAppDispatch();
 
-  const deleteItem = (e: React.MouseEvent<HTMLDivElement>) => {
-    e.stopPropagation();
+  const deleteItem = () => {
     dispatch(removeItem(item));
   };
+
   return (
     <li className="flex items-center gap-5 p-2 bg-white text-gray-500 hover:bg-gray-100 transition">
       <div className="flex justify-center w-12 h-12 items-center bg-white">

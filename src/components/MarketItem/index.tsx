@@ -23,7 +23,7 @@ const MarketItem = ({ name, image, price }: ItemType) => {
   };
 
   return (
-    <li className="p-4 bg-white rounded hover:shadow-md transition animate-fadeIn">
+    <li className="market-item p-4 bg-white rounded hover:shadow-md transition animate-fadeIn">
       <img
         src={image}
         alt={name}

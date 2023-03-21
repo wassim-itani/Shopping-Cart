@@ -8,8 +8,7 @@ const Dropdown = () => {
   const dispatch = useAppDispatch();
 
   const checkout = (): void => alert("Thank you for purchasing from Market :)");
-  const clear = (e: React.MouseEvent<HTMLButtonElement>): void => {
-    e.stopPropagation();
+  const clear = (): void => {
     dispatch(clearCart());
   };
 
