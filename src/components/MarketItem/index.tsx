@@ -1,18 +1,25 @@
 import { useState } from "react";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
+import { useAppDispatch } from "../../hooks/storeHooks";
 import { ItemType } from "../../store/features/marketSlice";
+import { addItem } from "../../store/features/cartSlice";
 import Button from "../Button";
 
 const MarketItem = ({ name, image, price }: ItemType) => {
-  const [quantity, setQuantity] = useState<number>(0);
+  const [quantity, setQuantity] = useState<number>(1);
+  const dispatch = useAppDispatch();
 
   const decrementQuantity = (): void => {
     const newQuantity = quantity - 1;
-    setQuantity(newQuantity < 0 ? 0 : newQuantity);
+    setQuantity(newQuantity <= 0 ? 1 : newQuantity);
   };
 
   const incrementQuantity = (): void => {
     setQuantity(quantity + 1);
+  };
+
+  const addToCart = () => {
+    dispatch(addItem({ name, image, price, quantity }));
   };
 
   return (
@@ -37,7 +44,10 @@ const MarketItem = ({ name, image, price }: ItemType) => {
             onClick={incrementQuantity}
           />
         </div>
-        <Button className="block w-3/4 mx-auto p-2 bg-red-500 hover:bg-red-600 transition">
+        <Button
+          className="block w-3/4 mx-auto p-2 bg-red-500 hover:bg-red-600 transition"
+          onClick={addToCart}
+        >
           Add to Cart
         </Button>
       </div>
