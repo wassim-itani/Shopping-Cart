@@ -39,7 +39,7 @@ const SearchMarket = () => {
         <input
           type="text"
           value={query}
-          className="grow py-1 px-2 text-gray-600 border-2 border-red-500"
+          className="grow py-1 px-2 text-gray-600 border-2 border-red-500 focus:outline-0"
           placeholder="Search the market..."
           onChange={changeQuery}
         />
@@ -47,7 +47,7 @@ const SearchMarket = () => {
       <input
         type="text"
         value={query}
-        className="hidden w-72 py-1 px-2 text-gray-600 border-2 border-red-500 min-[426px]:block"
+        className="hidden w-72 py-1 px-2 text-gray-600 border-2 border-red-500 min-[426px]:block focus:outline-0"
         placeholder="Search the market..."
         onChange={changeQuery}
       />

@@ -13,13 +13,20 @@ const App = () => {
     dispatch(fetchMarketItems("/Data.json"));
   }, []);
 
-  if (isLoading) return <GridLoader className="fixed bottom-1/2 right-1/2" />;
   return (
     <>
-      <Header />
-      <main className="max-w-5xl mx-auto px-4 min-[426px]:px-5">
-        <MarketList />
-      </main>
+      {isLoading ? (
+        <div className="fixed flex justify-center items-center w-screen h-screen">
+          <GridLoader />
+        </div>
+      ) : (
+        <>
+          <Header />
+          <main className="max-w-5xl mx-auto px-4 min-[426px]:px-5">
+            <MarketList />
+          </main>
+        </>
+      )}
     </>
   );
 };
